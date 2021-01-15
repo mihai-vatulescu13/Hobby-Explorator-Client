@@ -1,0 +1,29 @@
+.search-button{
+ background-image: linear-gradient(to right,#FE6B8B, #FF8E53);
+ color: whitesmoke;
+ border: none;
+
+}
+
+.search-button:hover{
+ 
+}
+
+.search-bar-component{
+  width: 100vw;
+  background-color: #757575; 
+  padding: 15px; 
+}
+
+@media all and (max-width:800px){
+ .searchbar-form{
+   display: flex;
+   justify-content: center;
+  
+ }
+
+ .search-button{
+  margin: 10px; 
+ }
+
+}

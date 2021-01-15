@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+
+.btn-style{
+ background-image: linear-gradient(to right,#FF8E53,#FE6B8B);
+ border: 0px;
+ width: 140px;
+ height: auto;
+  
+}
+
+
+.edit-profile-title{
+ font-family: dancing script;
+ font-size: 35px;
+
+}
+
+.main-user-data-list{
+ display: flex;
+ flex-direction: column;
+    
+}
+
+.user-data-card{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ margin: 12px;
+
+}
+
+.edit-profile-title-section{
+ margin: 12px;
+
+}
+
+.main-user-data-container{
+  border: 1px solid gray;
+  padding: 20px;
+  margin: 12px;
+  border-radius: 25px;
+  background-color: rgb(246, 246, 246);
+
+}
+
+.user-profile-image{
+ width: 160px;
+ height: auto;
+ border-radius: 20px;
+ box-shadow: 5px 5px 10px black;
+
+}
+
+.user-data-label{
+ color: #FE6B8B;
+ margin-left: 7px;
+ margin-right: 7px;
+ font-size: 25px;
+ font-family: dancing script;
+ 
+}
+
+.center-elem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px solid black;
+
+}
+
+.center-comp{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.imgprf-container{
+ margin-right: 70px;
+
+}
+
+.usr-data-section{
+ margin-left: 70px;
+
+}
+
+.usr-data-text{
+ font-size: 18px;
+ color: rgb(87, 87, 87);
+
+}
+
+.user-data-label, .usr-data-text{
+ margin-top: 1px;
+ margin-bottom: 1px;
+
+}
+
+.user-data-card-title{
+ padding: 5px;
+ font-family: dancing script;
+ color: rgb(87, 87, 87);
+ text-shadow: black;
+ font-size: 28px;
+
+}
+
+.user-hobbies-list-items{
+  
+}
+
+.user-hobby-list-item{
+ margin: 5px;
+ color: rgb(87, 87, 87);
+
+}
+
+.user-hobbies-label{
+  /* color: rgb(87, 87, 87); */
+  color: #FF8E53;
+  font-family: dancing script;
+  font-size: 28px;
+  margin-bottom: 3px;
+
+}
+
+.settings-container, .change-data{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.change-name-field{
+ width: 60vw;
+
+}
+
+.delete-account-label{
+
+}
+
+.delete-account-label{
+ color: rgb(228, 4, 4); 
+ font-size: 26px;
+ margin-bottom: 1px;
+ margin-top: 18px;
+ font-family: dancing script;
+
+}
+
+.warning-message{
+ color: rgb(228, 4, 4);
+ font-size: 14px;
+ margin: 4px;
+
+}
+
+.delete-account-btn{
+ background-color: rgb(228, 4, 4);
+ margin: 10px;
+
+}
+
+/* back to home button */
+.back-btn-home{
+  margin-bottom: 15px;
+
+}
+
+.save-account-setting{
+  margin-top: 15px;
+
+}
+
+.change-name-field{
+  width: 320px;
+
+}
+
+
+
+
+
+@media all and (max-width:800px){
+ .user-data-card{
+  display: flex;
+  flex-direction: column;
+
+ }
+
+ .imgprf-container{
+  margin-right: 0px;
+ }
+   
+ .usr-data-section{
+  margin-left: 0px;
+ } 
+
+}

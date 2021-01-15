@@ -1,0 +1,134 @@
+
+.main-container{
+  /* position: relative; */
+  /* height: 100%; */
+  /* min-height: 100%; */
+
+}
+
+
+/* logo properties: */
+.user-logo{
+  width: 60px;
+  height: auto;
+  margin: 6px;
+}
+
+.top-container{
+  display: inline-flex;
+  justify-content: center;
+  margin: 10px;
+
+}
+
+.title-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+
+}
+
+.page-title{
+ font-weight: 200;
+ font-size: 45px;  
+
+}
+
+.first-half-title{
+ color: #FF8E53;
+}
+
+.second-half-title{
+ color: #FE6B8B;
+}
+
+.credentials-section-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;  
+}
+
+.follow-message-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.follow-message{
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+  /* colorized font style: */
+  background: -webkit-linear-gradient(45deg,#FE6B8B, #FF8E53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+  font-family: comfortaa;
+}
+
+.btn-style{
+  background-image: linear-gradient(to right,#FF8E53,#FE6B8B);
+  border: 0px;
+  width: 120px;
+  height: auto;
+
+}
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.no-account-message > p{
+ margin: 0px;
+ font-size: 18px;
+ color: rgb(87, 87, 87);
+ font-family: comfortaa;
+ text-align: center;
+
+}
+
+.no-account-message, .register-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+
+}
+
+.register-nav{
+ margin-top: 60px;
+ margin-bottom: 60px;
+ /* background-color: rgba(70, 70, 70, 0.8); */
+ border: 0px;
+ padding: 10px;
+ /* border-radius: 25px; */
+
+}
+
+.register-nav-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.other-msg{
+  height: 25vh;
+
+}
+
+
+
+/* media query used to make elements responsive for a specific screen width: */
+@media all and (max-width:800px){
+ 
+}
+
+

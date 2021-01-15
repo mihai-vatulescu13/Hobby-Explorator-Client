@@ -1,0 +1,58 @@
+
+Hobby Explorator database schema:
+
+--create 3 tables: login, users and hobbies.
+
+
+--User table:
+create table users(
+	user_id serial,
+        username varchar(50) not null,
+	email varchar(50) unique not null,
+	city varchar(30) not null,
+        joined timestamp,
+        imageprofile varchar(400) not null,
+	primary key(user_id)
+);
+
+--Hobbies table 
+create table hobbies(
+	hobby varchar(25) not null,
+	hobby_id int not null,
+	foreign key (hobby_id) references users (user_id)
+);
+
+--Login table
+create table login(
+   password varchar(300) not null,
+   email varchar(50) not null unique	
+);
+
+
+--insert some data in users table:
+insert into users(username,emai,city) values 
+('misu','misu@gmail.com','smirdan'), 
+('costel','cos@gamil.com','vaslui'), 
+('georgel','georgi@gmail.com','bucuresti');
+
+
+
+--insert some data in hobbies table:
+insert into hobbies(hobby, hobby_id) values 
+('draw',1),
+('play football',1),
+('listen music',1),
+('play football',3),
+('read books',3),
+('listen music',3),
+('listen music',2),
+('draw',2);
+
+
+--join query:
+select * from users join hobbies on users.user_id = hobbies.hobby_id;
+--query join by a specific condition:
+select * from users join hobbies on users.user_id = hobbies.hobby_id and hobby = 'draw';
+
+--another test query:
+select users.username, hobbies.hobby from users join hobbies on users.user_id = hobbies.hobby_id;

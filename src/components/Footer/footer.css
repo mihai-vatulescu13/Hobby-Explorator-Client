@@ -1,0 +1,141 @@
+/* import fonts from google fonts platform: */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* set footer background: */
+.footer-container{
+  background-image: linear-gradient(to right,rgb(187, 187, 187),#FF8E53,#FE6B8B);  
+  margin: 0;
+
+}
+
+.contact-logo{
+  width: 50px;  
+}
+
+.contact-platform-name{
+  font-size: 20px;  
+  color: whitesmoke;
+  margin: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-platform-name:hover{
+ color: #FE6B8B;
+ text-decoration: none;
+ 
+}
+
+.name, .date-created{
+  color: white; 
+  font-size: 17px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+
+}
+
+.color-text{
+  color: whitesmoke;
+
+}
+
+.contact-me{
+  /* font-family: indie flower; */
+  color: whitesmoke;
+  font-size: 17px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  
+}
+
+.contact-item{
+  margin: 10px;
+
+}
+
+.contact-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(87,87,87);
+}
+
+.author-details{
+ margin-top: 10px; 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+/* properties from other file: */
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 10px;
+  
+}
+
+.nav-link:hover{
+ color: whitesmoke;
+
+}
+
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.nav-item{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto;
+
+}
+
+
+
+@media all and (max-width:800px){
+ .contact-logo{
+   width: 30px;
+   margin: 0px;
+ } 
+ 
+ .name, .date-created{
+    color: white; 
+    font-size: 15px;
+ }
+
+ .contact-me{
+  /* font-family: indie flower; */
+  color: whitesmoke;
+  font-size: 14px;
+ } 
+ 
+ .contact-platform-name{
+    font-size: 15px;  
+    color: whitesmoke;
+    margin: 10px;
+    text-decoration: none;
+ }
+
+ .contact-item{
+  margin: 0px;
+ }
+
+ .contact-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+}
+
+
+

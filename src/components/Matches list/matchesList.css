@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+.matches-list-title{
+ padding: 30px;
+ 
+}
+
+h2{
+ font-family: dancing script;
+ font-size: 50px;
+
+}
+
+.matches-list{
+ margin-top: 20px;
+
+}
+
+.back-home-btn{
+ padding: 5px;
+ color: whitesmoke;
+ margin: 15px;   
+}
+
+.empty-hobby-list-msg{
+ font-family: dancing script;
+ font-size: 28px;
+ text-align: center;
+ margin: 10px;
+
+}
+
+.hobby-item-text-prop{
+ color: #FE6B8B;
+ font-size: 24px;
+ margin: 2px;
+ font-family: comfortaa;
+ font-weight: 200;
+
+}
+
+.hobbies-list-list-label{
+ font-size: 28px;
+ font-family: comfortaa;
+ color: #FF8E53;
+ margin: 2px;
+
+}
