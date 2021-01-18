@@ -11,7 +11,7 @@ create table users(
 	email varchar(50) unique not null,
 	city varchar(30) not null,
         joined timestamp,
-        imageprofile varchar(400) not null,
+        imageprofile varchar(450) not null,
 	primary key(user_id)
 );
 

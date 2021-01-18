@@ -5,6 +5,7 @@ import './editProfile.css';
 import Login from '../Login/Login.js'
 import Register from '../Register/Register.js'
 import {Form} from 'react-bootstrap'
+import firebase from '../../firebase.js'
 
 
 class EditProfile extends React.Component{
@@ -16,7 +17,8 @@ class EditProfile extends React.Component{
       userArrHobby:[] //this array is empty before componentDidMount() method call
     },
     newUserName: this.props.passUserData.username,
-    newCity: this.props.passUserData.city
+    newCity: this.props.passUserData.city,
+    imageSource: ''
    }
   } 
 
@@ -26,7 +28,20 @@ class EditProfile extends React.Component{
    .then(data =>{
      this.getCurrentUserHobbies(data.usersHobbies)
     }
-   ) 
+   )
+   this.setProfilePicture();
+  }
+
+  setProfilePicture = () =>{
+   let storageRef = firebase.storage().ref()
+   let spaceRef = storageRef.child('images/' + this.props.passUserData.imageprofile)
+   storageRef
+    .child('images/' + this.props.passUserData.imageprofile)
+    .getDownloadURL()
+    .then(url =>{
+     console.log('image url:\n',url)
+     this.setState({imageSource: url}) 
+    }) 
   }
 
   routeChange = (path) =>{
@@ -124,7 +139,7 @@ class EditProfile extends React.Component{
          <div className='imgprf-container center-elem'>
           <img
            className='user-profile-image' 
-           src={this.props.passUserData.imageprofile}
+           src={this.state.imageSource}
            alt='user-profile'
           />
          </div> 

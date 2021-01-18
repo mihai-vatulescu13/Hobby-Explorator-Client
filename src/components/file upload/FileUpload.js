@@ -2,6 +2,7 @@ import React from 'react'
 import {Button} from 'react-bootstrap'
 import './fileUpload.css'
 import axios from 'axios'
+import firebase from '../../firebase.js'
 //import image for default profile picture:
 // import defaultPic from '../images/user-default-pic.png'
 
@@ -25,24 +26,18 @@ class FileUpload extends React.Component {
   this.setState({file: event.target.files[0]});
  }
 
-
+ //handle image upload
  handleUpload = () =>{ 
   let file = this.state.file;
-  //instantiate FormData class to create an file object:
-  let formData = new FormData();
-  formData.append('file',file);
+  let bucketName = 'images';
+  let storageRef = firebase.storage().ref(`${bucketName}/${file.name}`)
+  let uploadTask = storageRef.put(file);
 
-  //send the file to the server using axios post http method:
-  axios.post('https://fierce-shore-66137.herokuapp.com/upload',formData)
-  .then(res =>{
-   //print for test given response from the server: 
-   console.log('received data:\n',res.data.filePath)
-   //update the state(file name and path):
-   this.setState({uploadedFileName: res.data.fileName})
-   this.setState({uploadedFilePath: 'https://fierce-shore-66137.herokuapp.com' + res.data.filePath})
-
+  uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED,() =>{
+   let downloadURL = uploadTask.snapshot.downloadURL 
   })
-  .catch(err => console.log(err)) 
+
+  console.log('name of the file:\n',file.name)
  }
 
 
@@ -68,7 +63,7 @@ class FileUpload extends React.Component {
     email: email,
     password: password,
     city: city,
-    imageprofile: this.state.uploadedFilePath
+    imageprofile: this.state.file.name
    }) 
   })
   .then((data) => data.json())
@@ -98,7 +93,7 @@ class FileUpload extends React.Component {
       <Button 
        className='upload-picture-btn'
        //type='submit'
-       onClick={() => this.handleUpload()}
+       onClick={() => this.handleUpload()} 
       >
        Upload picture 
       </Button>

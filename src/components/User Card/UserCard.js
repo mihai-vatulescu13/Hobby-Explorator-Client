@@ -1,17 +1,39 @@
 import React from 'react'
 import './userCard.css'
+import firebase from '../../firebase.js'
 //use later on as default picture if the user was not choose a profile picture
-// import userPicture from '../images/user-picture1.png'
+import userPicture from '../images/user-picture1.png'
 
-const UserCard = ({username,hobby1,hobby2,hobby3,city,imageprofile,email}) =>{
-  
+class UserCard extends React.Component{
+ constructor(props){
+  super(props);
+  this.state = {
+   imageSource: '' 
+  }
+ } 
+
+ componentDidMount(){
+  let storageRef = firebase.storage().ref()
+  let spaceRef = storageRef.child('images/'+this.props.imageprofile)
+  storageRef
+   .child('images/'+this.props.imageprofile)
+   .getDownloadURL()
+   .then(url =>{
+    console.log('image url:\n',url)
+    this.setState({imageSource: url}) 
+   })
+
+ }
+
+ render(){
+  const {username,hobby1,hobby2,hobby3,city,imageprofile,email} = this.props;  
   return(
    <div className='user-card-container'>
     {/* profile picture section for the user card */}
     <div className='user-picture-section center-elem'>
      <img
       //use require to import image/file automatically from a local folder 
-      src={imageprofile} 
+      src={this.state.imageSource} 
       alt='user-profile-img'
       className='profile-picture'
      />
@@ -51,7 +73,8 @@ const UserCard = ({username,hobby1,hobby2,hobby3,city,imageprofile,email}) =>{
     </div>
 
    </div>   
-  )  
+  )
+ }   
 }
 
 export default UserCard;
