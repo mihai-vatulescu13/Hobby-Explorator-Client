@@ -6,6 +6,7 @@ import Login from '../Login/Login.js'
 import Register from '../Register/Register.js'
 import {Form} from 'react-bootstrap'
 import firebase from '../../firebase.js'
+import userDefaultPic from './user-default-pic.png'
 
 
 class EditProfile extends React.Component{
@@ -18,7 +19,7 @@ class EditProfile extends React.Component{
     },
     newUserName: this.props.passUserData.username,
     newCity: this.props.passUserData.city,
-    imageSource: ''
+    imageSource: userDefaultPic //default user picture
    }
   } 
 

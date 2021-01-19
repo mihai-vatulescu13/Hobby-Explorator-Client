@@ -8,7 +8,7 @@ class UserCard extends React.Component{
  constructor(props){
   super(props);
   this.state = {
-   imageSource: '' 
+   imageSource: userPicture //default user picture 
   }
  } 
 
