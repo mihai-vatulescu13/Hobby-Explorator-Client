@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Hobby-Explorator-Client/precache-manifest.4df6c159c16e6d0e27d447cde598e2bc.js"
+  "/Hobby-Explorator-Client/precache-manifest.5127a49f3d9891ea2a78a83774ce66d4.js"
 );
 
 self.addEventListener('message', (event) => {
