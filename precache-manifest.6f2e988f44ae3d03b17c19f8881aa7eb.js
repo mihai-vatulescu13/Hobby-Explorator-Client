@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "06b176ba8f6a54a0b63c20d26995880d",
+    "revision": "5d22d0684f195edab5f4838329a2a012",
     "url": "/Hobby-Explorator-Client/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Hobby-Explorator-Client/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "4d124e7675e584d8e58b",
+    "revision": "f6a5e1046c320addf51a",
     "url": "/Hobby-Explorator-Client/static/css/main.8c76da87.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Hobby-Explorator-Client/static/js/2.57507814.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d124e7675e584d8e58b",
-    "url": "/Hobby-Explorator-Client/static/js/main.40f034e1.chunk.js"
+    "revision": "f6a5e1046c320addf51a",
+    "url": "/Hobby-Explorator-Client/static/js/main.9a002192.chunk.js"
   },
   {
     "revision": "e856cddcec2472405631",
