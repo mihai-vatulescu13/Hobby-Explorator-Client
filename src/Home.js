@@ -107,17 +107,17 @@ class App extends React.Component {
               </Nav.Link>
 
               <Nav.Link 
-               className='nav-link'
+               className='nav-link center-elem'
                href="login"
-               type="submit"
-               //onClick={() => this.props.routeChange('login')}
               >
-               <a 
-                href='https://mihai-vatulescu13.github.io/Hobby-Explorator-Client/'
-                className='nav-link-text'
+               <p>
+                <a 
+                  href='https://mihai-vatulescu13.github.io/Hobby-Explorator-Client/'
+                  className='nav-link-text-sign-out'
                 >
-                 Sign out
-               </a>
+                  Sign out
+                </a>
+               </p> 
               </Nav.Link>
 
             </Nav>

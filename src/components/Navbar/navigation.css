@@ -10,22 +10,24 @@
 
 }
 
-/* .nav-title{
- margin-left: 10px;
- margin-right: 10px;
-
-} */
-
-/* .mr-auto{
- margin-left: 10px;
- margin-right: 10px;
-
-} */
-
 .nav-link-text{
   color: whitesmoke;
   font-size: 18px;
   padding: 10px;
+  
+}
+
+.nav-link-text-sign-out{
+  color: whitesmoke;
+  font-size: 18px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.nav-link-text-sign-out:hover{
+ color: #ff8e53;
+ background-color: whitesmoke;
+ text-decoration: none;
   
 }
 
