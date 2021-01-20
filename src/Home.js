@@ -13,6 +13,7 @@ import {Nav, Navbar} from 'react-bootstrap'
 import Navigation from './components/Navbar/Navigation.js'
 import HobbiesList from './components/Hobbies List/HobbiesList.js'
 import EditProfile from './components/Edit Profile/EditProfile.js'
+import { Button } from 'bootstrap';
 
 
 class App extends React.Component {
@@ -106,7 +107,7 @@ class App extends React.Component {
                </p>
               </Nav.Link>
 
-              <Nav.Link 
+              <Button
                className='nav-link'
                href="login"
                type="submit"
@@ -115,7 +116,7 @@ class App extends React.Component {
                <p className='nav-link-text'>
                  Sign out
                </p>
-              </Nav.Link>
+              </Button>
 
             </Nav>
            </Navbar>
