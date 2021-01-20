@@ -110,7 +110,7 @@ class App extends React.Component {
                className='nav-link center-elem'
                href="login"
               >
-               <p>
+               <p className='nav-link-text'>
                 <a 
                   href='https://mihai-vatulescu13.github.io/Hobby-Explorator-Client/'
                   className='nav-link-text-sign-out'
