@@ -13,7 +13,6 @@ import {Nav, Navbar} from 'react-bootstrap'
 import Navigation from './components/Navbar/Navigation.js'
 import HobbiesList from './components/Hobbies List/HobbiesList.js'
 import EditProfile from './components/Edit Profile/EditProfile.js'
-import { Button } from 'bootstrap';
 
 
 class App extends React.Component {
@@ -107,16 +106,19 @@ class App extends React.Component {
                </p>
               </Nav.Link>
 
-              <button
+              <Nav.Link 
                className='nav-link'
                href="login"
                type="submit"
-               onClick={() => this.props.routeChange('login')}
+               //onClick={() => this.props.routeChange('login')}
               >
-               <p className='nav-link-text'>
+               <a 
+                href='https://mihai-vatulescu13.github.io/Hobby-Explorator-Client/'
+                className='nav-link-text'
+                >
                  Sign out
-               </p>
-              </button>
+               </a>
+              </Nav.Link>
 
             </Nav>
            </Navbar>
