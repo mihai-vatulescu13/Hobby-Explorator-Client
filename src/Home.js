@@ -107,7 +107,7 @@ class App extends React.Component {
                </p>
               </Nav.Link>
 
-              <Button
+              <button
                className='nav-link'
                href="login"
                type="submit"
@@ -116,7 +116,7 @@ class App extends React.Component {
                <p className='nav-link-text'>
                  Sign out
                </p>
-              </Button>
+              </button>
 
             </Nav>
            </Navbar>
