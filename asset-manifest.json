@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Hobby-Explorator-Client/static/css/main.cfe87bd0.chunk.css",
-    "main.js": "/Hobby-Explorator-Client/static/js/main.c8c42b09.chunk.js",
-    "main.js.map": "/Hobby-Explorator-Client/static/js/main.c8c42b09.chunk.js.map",
+    "main.css": "/Hobby-Explorator-Client/static/css/main.f484294e.chunk.css",
+    "main.js": "/Hobby-Explorator-Client/static/js/main.dae2ab56.chunk.js",
+    "main.js.map": "/Hobby-Explorator-Client/static/js/main.dae2ab56.chunk.js.map",
     "runtime-main.js": "/Hobby-Explorator-Client/static/js/runtime-main.924b83c6.js",
     "runtime-main.js.map": "/Hobby-Explorator-Client/static/js/runtime-main.924b83c6.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/Hobby-Explorator-Client/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.57507814.chunk.js": "/Hobby-Explorator-Client/static/js/2.57507814.chunk.js",
     "static/js/2.57507814.chunk.js.map": "/Hobby-Explorator-Client/static/js/2.57507814.chunk.js.map",
     "index.html": "/Hobby-Explorator-Client/index.html",
-    "precache-manifest.9a5457d391a843cdd7a5ef769cdfc09f.js": "/Hobby-Explorator-Client/precache-manifest.9a5457d391a843cdd7a5ef769cdfc09f.js",
+    "precache-manifest.0ed7ca66e88ca07709512c2032f40152.js": "/Hobby-Explorator-Client/precache-manifest.0ed7ca66e88ca07709512c2032f40152.js",
     "service-worker.js": "/Hobby-Explorator-Client/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/Hobby-Explorator-Client/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.cfe87bd0.chunk.css.map": "/Hobby-Explorator-Client/static/css/main.cfe87bd0.chunk.css.map",
+    "static/css/main.f484294e.chunk.css.map": "/Hobby-Explorator-Client/static/css/main.f484294e.chunk.css.map",
     "static/js/2.57507814.chunk.js.LICENSE.txt": "/Hobby-Explorator-Client/static/js/2.57507814.chunk.js.LICENSE.txt",
     "static/media/bike.png": "/Hobby-Explorator-Client/static/media/bike.df01264d.png",
     "static/media/books.png": "/Hobby-Explorator-Client/static/media/books.841c4006.png",
@@ -48,7 +48,7 @@
     "static/js/runtime-main.924b83c6.js",
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.57507814.chunk.js",
-    "static/css/main.cfe87bd0.chunk.css",
-    "static/js/main.c8c42b09.chunk.js"
+    "static/css/main.f484294e.chunk.css",
+    "static/js/main.dae2ab56.chunk.js"
   ]
 }
