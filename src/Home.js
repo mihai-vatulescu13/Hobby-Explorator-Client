@@ -109,6 +109,7 @@ class App extends React.Component {
               <Nav.Link 
                className='nav-link'
                href="login"
+               type="submit"
                onClick={() => this.props.routeChange('login')}
               >
                <p className='nav-link-text'>
@@ -167,7 +168,6 @@ class App extends React.Component {
                 />
                 <Carousel.Caption className='carousel-caption'>
                   <h3>Play music</h3>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </Carousel.Caption>
               </Carousel.Item>
 
