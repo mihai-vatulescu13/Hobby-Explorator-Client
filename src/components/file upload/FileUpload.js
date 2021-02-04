@@ -88,6 +88,10 @@ class FileUpload extends React.Component {
       />
      </div>
      
+     <p className='upload-picture-profile-label'>
+      Press UPLOAD button below (requied)
+     </p>
+
      <div className='submit-file'>
       {/* this will upload the image for preview before create the account */}
       <Button 

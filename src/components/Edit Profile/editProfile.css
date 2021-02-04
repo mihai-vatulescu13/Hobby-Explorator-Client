@@ -13,7 +13,7 @@
 
 
 .edit-profile-title{
- font-family: dancing script;
+ font-family: comfortaa;
  font-size: 35px;
 
 }
@@ -42,7 +42,7 @@
   border: 1px solid gray;
   padding: 20px;
   margin: 12px;
-  border-radius: 25px;
+  border-radius: 6px;
   background-color: rgb(246, 246, 246);
 
 }
@@ -60,7 +60,7 @@
  margin-left: 7px;
  margin-right: 7px;
  font-size: 25px;
- font-family: dancing script;
+ font-family: comfortaa;
  
 }
 
@@ -103,16 +103,13 @@
 
 .user-data-card-title{
  padding: 5px;
- font-family: dancing script;
+ font-family: comfortaa;
  color: rgb(87, 87, 87);
  text-shadow: black;
  font-size: 28px;
 
 }
 
-.user-hobbies-list-items{
-  
-}
 
 .user-hobby-list-item{
  margin: 5px;
@@ -123,7 +120,7 @@
 .user-hobbies-label{
   /* color: rgb(87, 87, 87); */
   color: #FF8E53;
-  font-family: dancing script;
+  font-family: comfortaa;
   font-size: 28px;
   margin-bottom: 3px;
 
@@ -140,16 +137,13 @@
 
 }
 
-.delete-account-label{
-
-}
 
 .delete-account-label{
  color: rgb(228, 4, 4); 
  font-size: 26px;
  margin-bottom: 1px;
  margin-top: 18px;
- font-family: dancing script;
+ font-family: comfortaa;
 
 }
 
