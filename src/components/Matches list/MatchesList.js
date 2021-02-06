@@ -105,7 +105,7 @@ class MatchesList extends React.Component{
     for(let i=0;i<arr.length;i++){
       if(arr[i].user_id !== this.props.userId){
         filtered.push(arr[i]); 
-      } 
+      }
     }
     return filtered;
   }
@@ -127,6 +127,7 @@ class MatchesList extends React.Component{
    const matchArr = filteredByName.map(item =>{
     return <UserCard
             key={item.user_id}
+            userid = {item.user_id}
             username = {item.username}
             email = {item.email}
             city = {item.city}

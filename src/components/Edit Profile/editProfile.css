@@ -59,7 +59,7 @@
  color: #FE6B8B;
  margin-left: 7px;
  margin-right: 7px;
- font-size: 25px;
+ font-size: 1.1em;
  font-family: comfortaa;
  
 }
@@ -106,22 +106,23 @@
  font-family: comfortaa;
  color: rgb(87, 87, 87);
  text-shadow: black;
- font-size: 28px;
+ font-size: 1.5em;
 
 }
 
 
 .user-hobby-list-item{
  margin: 5px;
- color: rgb(87, 87, 87);
+ color: #faa87c;
+ font-size: 1.1em;
 
 }
 
 .user-hobbies-label{
   /* color: rgb(87, 87, 87); */
-  color: #FF8E53;
+  color: #FE6B8B;
   font-family: comfortaa;
-  font-size: 28px;
+  font-size: 1.2em;
   margin-bottom: 3px;
 
 }
@@ -140,7 +141,7 @@
 
 .delete-account-label{
  color: rgb(228, 4, 4); 
- font-size: 26px;
+ font-size: 1.3em;
  margin-bottom: 1px;
  margin-top: 18px;
  font-family: comfortaa;
@@ -149,7 +150,7 @@
 
 .warning-message{
  color: rgb(228, 4, 4);
- font-size: 14px;
+ font-size: 1em;
  margin: 4px;
 
 }

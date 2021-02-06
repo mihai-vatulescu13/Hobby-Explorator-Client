@@ -3,23 +3,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
   background-color: rgb(87,87,87);
-  margin: 0;
-  padding: 0; 
+  /* margin: 0;
+  padding: 0;  */
+  width: 100%;
+  height: auto;
+ 
+}
+
+.nav-link{
+  color: whitesmoke;
+  font-size: 1.2em;
+  margin: 5px;
+  cursor: pointer;
 
 }
 
-.nav-link-text{
-  color: whitesmoke;
-  font-size: 18px;
-  padding: 10px;
-  
+.main-navbar{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.navbar{
+
 }
 
 .nav-link-text-sign-out{
   color: whitesmoke;
   text-decoration: none;
+
 }
 
 .nav-link-text-sign-out:hover{
@@ -29,7 +42,7 @@
   
 }
 
-.nav-link-text:hover{
+.nav-link:hover{
  color: #ff8e53;
  background-color: whitesmoke;
 
@@ -45,6 +58,13 @@
     
   } 
   
+  .main-navbar{
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+
 }
 
 @media all and (max-width:600px){
@@ -54,6 +74,11 @@
     font-size: 12px;
     padding: 2px;    
   } 
- 
+  
+  .main-navbar{
+    display: flex;
+    flex-direction: column;
+    
+  }
 }
 

@@ -26,7 +26,6 @@
 
 .card-body{
  padding: 0;
- /* width: 40vw; */
 
 }
 
@@ -41,10 +40,5 @@
 
 }
 
-/* .grid-elem{
- display: grid;
- grid-template-columns: 3fr; 
- 
-} */
 
 

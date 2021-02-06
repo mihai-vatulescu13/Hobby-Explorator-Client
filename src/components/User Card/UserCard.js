@@ -8,9 +8,12 @@ class UserCard extends React.Component{
  constructor(props){
   super(props);
   this.state = {
-   imageSource: userPicture //default user picture 
+   imageSource: userPicture, //default user picture
+   userMatchHobbies: [] 
   }
  } 
+
+
 
  componentDidMount(){
   let storageRef = firebase.storage().ref()
@@ -19,14 +22,41 @@ class UserCard extends React.Component{
    .child('images/'+this.props.imageprofile)
    .getDownloadURL()
    .then(url =>{
-    console.log('image url:\n',url)
     this.setState({imageSource: url}) 
    })
+  
+  //call receiveHobbies to set the array of hobbies for each user form matches list: 
+  this.receiveHobbies()
 
  }
 
+
+
+ //method that receive hobbies from server for matched user:
+ //then modify the state:
+ receiveHobbies = () =>{
+  fetch('https://fierce-shore-66137.herokuapp.com/getHobbies',{
+   method:'post',
+   headers:{'Content-type':'application/json'},
+   body: JSON.stringify({
+    user_id: this.props.userid 
+   }) 
+  })
+  .then(res => res.json())
+  .then(data =>{
+    const hobbiesArr = data.map(item =>{
+     return item.hobby 
+    })
+    this.setState({userMatchHobbies: hobbiesArr});
+  })
+
+ }
+
+
+
  render(){
-  const {username,hobby1,hobby2,hobby3,city,imageprofile,email} = this.props;  
+  const {username,hobby1,hobby2,hobby3,city,email,userid} = this.props;  
+  
   return(
    <div className='user-card-container'>
     {/* profile picture section for the user card */}
@@ -43,30 +73,36 @@ class UserCard extends React.Component{
     <div className='user-data-section center-elem'>
      <div className='fname-lname'>
       <h4 className='username'>{username}</h4>
-      {/* <h4 className='lname'>Mitica</h4>  */}
      </div>
 
      <div className='hobbies-city'>
       <div className='hobbies-description'>
         {/* this part will show for each user first 3 hobbies(from his hobbies array->hobby:0,1,2->index) */}
         <p className='user-hobby-text'>
-         email: {email}
+         Email: <span className='city-text'>{email}</span>
         </p>
-        <p className='user-hobby-text'>
-         {hobby2}
-        </p>
+        {/* this section represents matched user hobbies list: */}
+        <div className='center-elem matched-user-hobbies'>
+         <h5>Hobbies:</h5> 
+         <ul>
+          {
+            this.state.userMatchHobbies.map((item,index) =>{
+             return <li className='hobby-list-item' key={index}>{item}</li> 
+            })
+          }
+         </ul> 
+        </div>
+        {/* <p className='user-hobby-text'>
+         {userid}
+        </p> */}
         <p className='user-hobby-text'>
          {hobby3}
         </p>
       </div>
-      <div className='city-container'>
-       <h5 className='city-text'>
-        city: {city}
+      <div className='city-container center-elem'>
+       <h5>
+        City: <span className='city-text'>{city}</span>
        </h5>
-       <p className='user-rating'>
-        {/* automatically counter(passed from the server) later on show user popularity*/}
-        {/* people compatibility: 25  */}
-       </p>
       </div>
      </div>
 

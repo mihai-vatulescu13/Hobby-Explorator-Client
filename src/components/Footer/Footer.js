@@ -12,7 +12,7 @@ const Footer = () =>{
    <div className='author-details'>
     <div className='auth-data'>
       <p className='name'>
-      {/*left side:white color,right side:radiant gradient colors */}
+       {/*left side:white color,right side:radiant gradient colors */}
         Author:<span className='color-text'> Mihai Vatulescu</span>
       </p>
       <p className='date-created'>
@@ -23,6 +23,7 @@ const Footer = () =>{
       </p>
     </div> 
    </div>
+   
    {/* contact details section: */}
    <div className='contact-details'>
     <ul>

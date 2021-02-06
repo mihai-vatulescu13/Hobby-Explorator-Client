@@ -13,29 +13,26 @@
 
 }
 
-/* main container property: */
-/* .main-container{
-
-} */
 
 /* global text style: */
 .global-font{
  font-weight: 200;
- font-size: 15px;
+ font-size: 0.8em;
  color: #242424; 
  
 }
 
 .title-page{
   font-weight: 200;
-  font-size: 27px;
+  font-size: 1.4em;
+
 }
 
 .title-page-username{
  color: #FE6B8B;
  margin-left: 10px;
  font-family: dancing script;
- font-size: 35px;
+ font-size: 2em;
 
 }
 
@@ -57,7 +54,7 @@
 }
 
 .title-text{
-  font-size: 27px;
+  font-size: 1em;
   font-family: montserrat;
   margin: 10px;
   cursor: pointer;
@@ -73,13 +70,11 @@
 
 .first-half, .second-half{
   font-weight: 200;
-  font-size: 27px;
+  font-size: 2em;
 }
 
-/* description title property: */
 
 
-/* navbar  property */
 
 /* image description propery: */
 .game-image{
@@ -96,11 +91,12 @@
 }
 
 .page-desc-text{
-  font-size: 35px;
+  font-size: 1.5em;
   font-weight: 200;
   font-family: comfortaa;
   background-color: rgb(255, 208, 0);
   padding: 35px;
+  width: 100%;
 
 }
 
@@ -129,7 +125,7 @@
 /* description text section property: */
 .description-text{
  font-weight: 200;
- font-size: 22px; 
+ font-size: 1.2em; 
  background: -webkit-linear-gradient(45deg,#FE6B8B, #FF8E53);
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
@@ -151,7 +147,7 @@
 }
 
 .slide-img-prop{
- width: 55vw;
+ width: 45vw;
  height: auto;
 
 }
@@ -163,10 +159,10 @@
 
 .image-and-text{
  display: flex;
- /* set children elements as a row */
- flex-direction: row;
+ justify-content: space-around;
  opacity: 0.95;
  background-color: rgb(54, 54, 54);
+ padding: 20px;
 
 }
 
@@ -178,15 +174,12 @@
 
  }
  
- .desc-container{  
-
- }
-
  .image-and-text{
   display: flex;
   /* set children elements as a row */
   flex-direction: column;
-
+  padding: 10px;
+  
  }
 
  .page-desc{

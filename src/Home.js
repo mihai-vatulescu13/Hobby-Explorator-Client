@@ -9,7 +9,6 @@ import photoHobby from './components/images/photo-hobby.jpg'
 import tennishobby from './components/images/tennis-hobby.jpg'
 import guitarHobby from './components/images/guitar-hobby.jpg'
 import MatchesList from './components/Matches list/MatchesList.js'
-import {Nav, Navbar} from 'react-bootstrap'
 import Navigation from './components/Navbar/Navigation.js'
 import HobbiesList from './components/Hobbies List/HobbiesList.js'
 import EditProfile from './components/Edit Profile/EditProfile.js'
@@ -76,52 +75,40 @@ class App extends React.Component {
 
           {/* navigation container: */}
           <div className='navbar-container'>
-           <Navbar variant="dark">
-            <Nav className="mr-auto">
+           <div className="navbar">
+            <div className=" main-navbar">
 
-              <Nav.Link 
+              <a 
                className='nav-link'
                onClick={() => this.changeRoute('hobbies-list')}
               >
-                <p className='nav-link-text'>
-                 Add hobbies
-                </p>
-              </Nav.Link>
+                Add hobbies
+              </a>
 
-              <Nav.Link 
+              <a 
                className='nav-link'
                onClick={() => this.changeRoute('edit-profile')}
               >
-                <p className='nav-link-text'>
-                 Account
-                </p>
-              </Nav.Link>
+                Account
+              </a>
 
-              <Nav.Link 
+              <a 
                className='nav-link'
                onClick={() => this.changeRoute('matches-list')}
               >
-               <p className='nav-link-text'>
-                 Matches list
-               </p>
-              </Nav.Link>
+                Matches list
+              </a>
 
-              <Nav.Link 
+              <a 
                className='nav-link center-elem'
-               href="login"
+               href="https://mihai-vatulescu13.github.io/Hobby-Explorator-Client/"
+               type="submit"
               >
-               <p className='nav-link-text'>
-                <a 
-                  href='https://mihai-vatulescu13.github.io/Hobby-Explorator-Client/'
-                  className='nav-link-text-sign-out'
-                >
-                  Sign out
-                </a>
-               </p> 
-              </Nav.Link>
+                Sign out
+              </a>
 
-            </Nav>
-           </Navbar>
+            </div>
+           </div>
           </div>
 
 
@@ -180,7 +167,7 @@ class App extends React.Component {
 
           {/* first description section: */}
           <div className='page-desc center-elem'>
-            <div className='desc-container'>
+            <div className='desc-container '>
               <div className='desctext'>
                <p className='page-desc-text'>
                 Discover more people with same hobby and interact with them! 
@@ -194,13 +181,13 @@ class App extends React.Component {
                   alt='hobby img'
                  /> 
                 </div>
-                <div className='page-description'>
-                 <p className='description-text'>
+                <div className='page-description '>
+                  <p className='description-text'>
                    Do you have a hobby to play or do something you like and you can't do that because you're get bored by doing on your own? 
-                 </p>
-                 <p className='description-text'>
-                  This platform is for you! In this platform you can find other people with the same hobby/passion like you have and you can interact with them in real life to do what are passionate you.
-                 </p>
+                  </p>
+                  <p className='description-text'>
+                   This platform is for you! In this platform you can find other people with the same hobby/passion like you have and you can interact with them in real life to do what are passionate you.
+                  </p> 
                 </div>
               </div>  
             </div>  
