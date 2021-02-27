@@ -162,8 +162,6 @@ class HobbiesList extends React.Component{
              let hobbyNames = data.selectedHobbies.map(item =>{
               return item.hobbyName;
              });
-             
-             console.log(hobbyNames)
 
              if(data.selectedHobbies.length === 0){
               console.log('no item choosed')
@@ -180,7 +178,7 @@ class HobbiesList extends React.Component{
              }
             }}
            >
-            Save data
+            Save your hobbies
            </Button>
            
            {
@@ -189,7 +187,7 @@ class HobbiesList extends React.Component{
             <p 
              className='choose-item-msg'
              style={{marginTop:'25px',fontSize:'19px'}}>
-              Data saved with success
+              Hobbies saved with success
             </p> : 
             <p></p>
            }

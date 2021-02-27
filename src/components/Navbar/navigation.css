@@ -1,84 +1,64 @@
-
-.navbar-container{
+.navbar-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(87,87,87);
+  background-color: rgb(87, 87, 87);
   /* margin: 0;
   padding: 0;  */
   width: 100%;
   height: auto;
- 
 }
 
-.nav-link{
+.nav-link {
   color: whitesmoke;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin: 5px;
   cursor: pointer;
-
 }
 
-.main-navbar{
+.main-navbar {
   display: flex;
   justify-content: space-between;
-
 }
 
-.navbar{
-
-}
-
-.nav-link-text-sign-out{
+.nav-link-text-sign-out {
   color: whitesmoke;
   text-decoration: none;
-
 }
 
-.nav-link-text-sign-out:hover{
- color: #ff8e53;
- background-color: whitesmoke;
- text-decoration: none;
-  
+.nav-link-text-sign-out:hover {
+  color: #ff8e53;
+  background-color: whitesmoke;
+  text-decoration: none;
 }
 
-.nav-link:hover{
- color: #ff8e53;
- background-color: whitesmoke;
-
+.nav-link:hover {
+  color: #ff8e53;
+  background-color: whitesmoke;
 }
 
-
-@media all and (max-width:800px){
-
-  .nav-link-text{
+@media all and (max-width: 800px) {
+  .nav-link-text {
     color: whitesmoke;
-    font-size: 14px;
+    font-size: 0.9rem;
     padding: 2px;
-    
-  } 
-  
-  .main-navbar{
+  }
+
+  .main-navbar {
     display: flex;
     flex-direction: column;
-
   }
-  
-
 }
 
-@media all and (max-width:600px){
-
-  .nav-link-text{
+@media all and (max-width: 600px) {
+  .nav-link-text {
     color: whitesmoke;
-    font-size: 12px;
-    padding: 2px;    
-  } 
-  
-  .main-navbar{
+    font-size: 0.8rem;
+    padding: 2px;
+  }
+
+  .main-navbar {
     display: flex;
     flex-direction: column;
-    
   }
 }
-

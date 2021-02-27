@@ -20,7 +20,7 @@
 
 .page-title {
   font-weight: 200;
-  font-size: 2.1em;
+  font-size: 2.6rem;
 }
 
 .first-half-title {
@@ -46,7 +46,7 @@
 }
 
 .follow-message {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 200;
   text-align: center;
   /* colorized font style: */
@@ -72,7 +72,7 @@
 
 .no-account-message > p {
   margin: 0px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   color: rgb(87, 87, 87);
   font-family: comfortaa;
   text-align: center;

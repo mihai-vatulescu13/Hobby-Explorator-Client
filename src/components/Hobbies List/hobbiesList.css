@@ -1,96 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Quicksand&display=swap");
 
 /* custom class that set to center every children of a component: used for DRY
 principle(don't repeat yourself -> important) */
-.center-elem{
+.center-elem {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-.hobbies-list{
- display: grid;
- grid-gap: 20px;
- grid-template-columns: repeat(auto-fill,minmax(550px,1fr));
-
-
+.hobbies-list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
 }
 
-.back-link{
- margin-top: 25px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
-
+.back-link {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* set a specific font: */
-.back-link-text{
-  font-size: 28px;
+.back-link-text {
+  font-size: 1.6rem;
   font-weight: 200;
   margin-top: 35px;
-
 }
 
-.hobbies-section-title{
+.hobbies-section-title {
   margin: 20px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
-.title-hobby-list{
- font-size: 36px;
- font-family: dancing script;
- 
-
+.title-hobby-list {
+  font-size: 2.1rem;
+  font-family: dancing script;
 }
 
-
-.card-icon{
+.card-icon {
   width: 38px;
   height: auto;
   margin: 20px;
-
 }
 
-.card-container{
- display: flex;
- justify-content: center;
-
+.card-container {
+  display: flex;
+  justify-content: center;
 }
 
-.back-icon{
- width: 30px;
- height: 30px;
- margin: 5px;
- cursor: pointer;
-
+.back-icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
 }
 
-.back{
- margin: 5px; 
+.back {
+  margin: 5px;
 }
 
-.choose-item-msg{
-  background: -webkit-linear-gradient(45deg,#FE6B8B, #FF8E53);
+.choose-item-msg {
+  background: -webkit-linear-gradient(45deg, #fe6b8b, #ff8e53);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
 }
 
 /* responsive part: */
-@media all and (max-width:800px){
-  .card-icon{
+@media (max-width: 800px) {
+  .card-icon {
     width: 35px;
     height: auto;
-  
-  }
- 
-  .hobbies-list{
-   display: flex;
-   flex-direction: column;
-
   }
 
+  .hobbies-list {
+    display: flex;
+    flex-direction: column;
+  }
 }

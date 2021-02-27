@@ -141,7 +141,7 @@ class FileUpload extends React.Component {
        }
       }}
      >
-      Submit
+      Register
     </Button>  
    </div>
 

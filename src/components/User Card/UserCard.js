@@ -80,7 +80,7 @@ class UserCard extends React.Component{
       <div className='hobbies-description'>
         {/* this part will show for each user first 3 hobbies(from his hobbies array->hobby:0,1,2->index) */}
         <p className='user-hobby-text'>
-         Email: <span className='city-text'>{email}</span>
+         <span className='city-text'>{email}</span>
         </p>
         {/* this section represents matched user hobbies list: */}
         <div className='center-elem matched-user-hobbies'>

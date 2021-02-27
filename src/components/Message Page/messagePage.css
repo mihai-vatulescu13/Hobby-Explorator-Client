@@ -15,7 +15,7 @@
 .messaging-user-name {
   font-family: comfortaa;
   margin: 10px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 .picture-and-name {
@@ -28,16 +28,16 @@
 .name-and-close-btn {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
 }
 
 .user-message-picture {
   height: 85px;
   width: 85px;
   border-radius: 3em;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
 }
 
 .messages-main-container {
@@ -63,10 +63,6 @@
   /* justify-content: space-around; */
   align-items: center;
   margin: 5px;
-}
-
-.message-box,
-.send-msg-btn {
 }
 
 .message-btn-style {
@@ -95,7 +91,7 @@
   border-radius: 30px;
   padding: 8px;
   color: whitesmoke;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin: 2px;
   display: inline-block;
   /* background-color: #1178ee; */
@@ -117,7 +113,7 @@
   border-radius: 30px;
   padding: 8px;
   color: whitesmoke;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin: 2px;
   display: inline-block;
   background-color: #5f5f5f;
@@ -152,6 +148,10 @@
 
 .messages-form-style > .message-btn-style {
   margin: 1em;
+}
+
+.message-box-and-send-btn {
+  height: auto;
 }
 
 /* responsive section: */

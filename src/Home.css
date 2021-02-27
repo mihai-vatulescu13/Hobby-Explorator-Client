@@ -13,7 +13,7 @@
 /* global text style: */
 .global-font {
   font-weight: 200;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   color: #242424;
 }
 
@@ -51,7 +51,6 @@
   font-size: 1rem;
   font-family: montserrat;
   margin: 10px;
-  cursor: pointer;
 }
 
 .first-half {
@@ -65,7 +64,7 @@
 .first-half,
 .second-half {
   font-weight: 200;
-  font-size: 2em;
+  font-size: 1.5rem;
 }
 
 /* image description propery: */
@@ -82,7 +81,7 @@
 }
 
 .page-desc-text {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 200;
   font-family: comfortaa;
   background-color: rgb(255, 208, 0);
@@ -117,7 +116,7 @@
 /* description text section property: */
 .description-text {
   font-weight: 200;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   background: -webkit-linear-gradient(45deg, #fe6b8b, #ff8e53);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -173,7 +172,7 @@
 
   .description-text {
     font-weight: 200;
-    font-size: 15px;
+    font-size: 1rem;
 
     background: -webkit-linear-gradient(45deg, #fe6b8b, #ff8e53);
     -webkit-background-clip: text;
@@ -195,7 +194,7 @@
   }
 
   .page-desc-text {
-    font-size: 22px;
+    font-size: 1.2rem;
     font-family: comfortaa;
   }
 
@@ -205,17 +204,17 @@
 
   .title-page {
     font-weight: 200;
-    font-size: 18px;
+    font-size: 1.4rem;
   }
 
   .first-half,
   .second-half {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: montserrat;
   }
 
   .page-logo {
-    width: 40px;
+    width: 2.2em;
     margin: 0px;
   }
 
@@ -225,9 +224,6 @@
   }
 
   /*end media query*/
-}
-
-@media all and (max-width: 1200px) {
 }
 
 /* App defaults settings: */

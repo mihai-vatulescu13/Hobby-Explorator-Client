@@ -46,11 +46,11 @@ class HobbyCard extends React.Component{
                 variant="primary"
                 className='select-hobby-btn'
                 onClick={() =>{
-                return data.addHobby(itemId);
+                 return data.addHobby(itemId);
                 }}
               >
                 {
-                data.getItem(itemId).selected === true ? 'Selected' : 'Select' 
+                 data.getItem(itemId).selected === true ? 'Selected' : 'Select' 
                 }
               </Button>  
             </div>
@@ -58,11 +58,11 @@ class HobbyCard extends React.Component{
               {
                 data.getItem(itemId).selected ? 
                 (
-                  <Button 
+                 <Button 
                   variant="primary"
                   className='select-hobby-btn'
                   onClick={() =>{
-                  return data.removeHobby(itemId);
+                   return data.removeHobby(itemId);
                   }}
                  >
                   Remove 

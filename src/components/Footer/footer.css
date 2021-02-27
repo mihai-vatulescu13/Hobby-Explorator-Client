@@ -10,8 +10,6 @@
     #fe6b8b
   );
   margin: 0;
-  /* border: 1px solid red;
-  width: auto; */
 }
 
 .contact-logo {
@@ -19,7 +17,7 @@
 }
 
 .contact-platform-name {
-  font-size: 1em;
+  font-size: 1rem;
   color: whitesmoke;
   margin: 10px;
   text-decoration: none;
@@ -34,7 +32,7 @@
 .name,
 .date-created {
   color: white;
-  font-size: 1em;
+  font-size: 1.15rem;
   margin-top: 5px;
   margin-bottom: 5px;
   cursor: pointer;
@@ -47,7 +45,7 @@
 .contact-me {
   /* font-family: indie flower; */
   color: whitesmoke;
-  font-size: 1em;
+  font-size: 1.15rem;
   margin-top: 5px;
   margin-bottom: 5px;
   cursor: pointer;
@@ -115,7 +113,7 @@ li {
   }
 
   .contact-platform-name {
-    font-size: 15px;
+    font-size: 1rem;
     color: whitesmoke;
     margin: 10px;
     text-decoration: none;
