@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8edfbf68cccfae14dfd6285d43572166",
+    "revision": "26da35d020e90a843e76049a15efeb13",
     "url": "/Hobby-Explorator-Client/index.html"
   },
   {
-    "revision": "83d79dd1bee28f14267e",
+    "revision": "a81bf9d4a284e95dd42f",
     "url": "/Hobby-Explorator-Client/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "7189771934c27650f503",
-    "url": "/Hobby-Explorator-Client/static/css/main.521cc57f.chunk.css"
+    "revision": "7f2f2edb3d02cd9113e0",
+    "url": "/Hobby-Explorator-Client/static/css/main.bd2b6995.chunk.css"
   },
   {
-    "revision": "83d79dd1bee28f14267e",
-    "url": "/Hobby-Explorator-Client/static/js/2.57507814.chunk.js"
+    "revision": "a81bf9d4a284e95dd42f",
+    "url": "/Hobby-Explorator-Client/static/js/2.e70283ed.chunk.js"
   },
   {
     "revision": "baf8e19b81885464d04568dc57ed0d6b",
-    "url": "/Hobby-Explorator-Client/static/js/2.57507814.chunk.js.LICENSE.txt"
+    "url": "/Hobby-Explorator-Client/static/js/2.e70283ed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7189771934c27650f503",
-    "url": "/Hobby-Explorator-Client/static/js/main.9a2e8935.chunk.js"
+    "revision": "7f2f2edb3d02cd9113e0",
+    "url": "/Hobby-Explorator-Client/static/js/main.38a4568a.chunk.js"
   },
   {
     "revision": "e856cddcec2472405631",
