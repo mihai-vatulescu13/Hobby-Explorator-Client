@@ -174,6 +174,16 @@ class MatchesList extends React.Component{
             compatibilities
            </p> 
           </div>
+
+          {/* back to home button */}
+          <div className='center-elem'>
+           <Button
+            className='back-home-btn btn-style'
+            onClick={() => this.props.changeRoute('home')}
+           >
+            Back to home
+           </Button> 
+          </div>
                     
           <div className='matches-list-section center-elem'>
             {/* matches lsit properly: */}
@@ -183,15 +193,6 @@ class MatchesList extends React.Component{
             }
             </div> 
           </div>
-
-        <div className='center-elem'>
-          <Button
-           className='back-home-btn btn-style'
-           onClick={() => this.props.changeRoute('home')}
-          >
-            Back to home
-          </Button> 
-        </div>
 
         </div>
        </div>) : 

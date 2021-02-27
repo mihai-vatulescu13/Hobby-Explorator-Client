@@ -208,30 +208,31 @@ class EditProfile extends React.Component{
          <p className='user-hobbies-label'>
           Your selected hobbies:
          </p> 
-         <div className='user-hobbies-list-items'>
-          { 
-           this.state.currentUserHobbies.userArrHobby !== undefined ?
-           (
-            this.state.currentUserHobbies.userArrHobby.map((item,index) =>{
+         <div className='center-elem'>
+          <div className='user-hobbies-list-items'>
+           { 
+            this.state.currentUserHobbies.userArrHobby !== undefined ?
+            (
+             this.state.currentUserHobbies.userArrHobby.map((item,index) =>{
               return <p key={index}
                        className='user-hobby-list-item'
                      >
                       {item}
                      </p> 
               })
-           ) : //otherwise if there's not hobbies
-           (<p style={
-            {
-             fontSize:'15px',
-             textAlign:'center'
-            }
-           }>
-             You don't have any hobby yet
-            </p>)
-          }
+            ) : //otherwise if there's not hobbies
+            (<p style={
+             {
+              fontSize:'15px',
+              textAlign:'center'
+             }
+            }>
+              You don't have any hobby yet
+             </p>)
+           }
+          </div>
          </div> 
         </div>
-
        </div>
       </div>
 
