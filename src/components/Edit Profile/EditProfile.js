@@ -79,22 +79,26 @@ class EditProfile extends React.Component{
 
   //method that delete all user messages:
   deleteFirebaseUserProfilePicture = () =>{
-   //to be continued tomorrow
+   //create a reference to the file we want to delete:
+   let deletePictureRef = firebase.storage().ref(`images/${this.props.passUserData.imageprofile}`);
+   
+   //delete the file through a promise:
+   deletePictureRef.delete().then(() =>{
+    console.log('picture has been deleted with success') 
+   }).catch(() => console.log('error occurred'))
   }
 
 
   deleteFirebaseUserMessages = () =>{
    //delete all current user messages by userId and profile picture:
    const db = firebase.firestore();
-   let toBeDeleted = db.collection('messages')
-                       .where('userId','==',this.props.userId);
+   let toBeDeleted = db.collection('messages').where('userId','==',this.props.userId);
    
    toBeDeleted.get().then(querySnapshot =>{
      querySnapshot.forEach(doc =>{
       doc.ref.delete();
      })
    })
-
   }
   
 
@@ -303,9 +307,11 @@ class EditProfile extends React.Component{
             className='delete-account-btn'
             onClick={() => {
              this.routeChange('login');
-             //method that delete all user mesasges:  
+             //call method that delete all user mesasges:  
              this.deleteFirebaseUserMessages()
-             //call here a method that create an request that delete data from database:
+             //call method that delete all user profile picture: 
+             this.deleteFirebaseUserProfilePicture()
+             //call method that create an request that delete data from database:
              this.deleteUserData();
                
             }}
