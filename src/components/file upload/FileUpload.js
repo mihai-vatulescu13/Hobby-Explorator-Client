@@ -2,8 +2,6 @@ import React from 'react'
 import {Button} from 'react-bootstrap'
 import './fileUpload.css'
 import firebase from '../../firebase.js'
-//import image for default profile picture:
-// import defaultPic from '../images/user-default-pic.png'
 
 //file upload component(for image input):
 class FileUpload extends React.Component {
@@ -83,26 +81,15 @@ class FileUpload extends React.Component {
       <input 
        type='file' 
        className='file-input'
-       onChange = {event => this.handleFile(event)}
+       onChange = {async event => {
+        await this.handleFile(event);
+        this.handleUpload();
+       }}
       />
      </div>
-     
-     <p className='upload-picture-profile-label'>
-      Press UPLOAD button below (requied)
-     </p>
-
-     <div className='submit-file'>
-      {/* this will upload the image for preview before create the account */}
-      <Button 
-       className='upload-picture-btn'
-       //type='submit'
-       onClick={() => this.handleUpload()} 
-      >
-       Upload picture 
-      </Button>
-
-     </div>
     </div>
+
+
     {/* status image message */}
     {
       this.state.uploadedFileName ?
