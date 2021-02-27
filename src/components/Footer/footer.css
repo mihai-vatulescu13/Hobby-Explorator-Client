@@ -1,152 +1,142 @@
 /* import fonts from google fonts platform: */
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
 /* set footer background: */
-.footer-container{
-  background-image: linear-gradient(to right,rgb(187, 187, 187),#FF8E53,#FE6B8B);  
+.footer-container {
+  background-image: linear-gradient(
+    to right,
+    rgb(187, 187, 187),
+    #ff8e53,
+    #fe6b8b
+  );
   margin: 0;
-
+  /* border: 1px solid red;
+  width: auto; */
 }
 
-.contact-logo{
-  width: 50px;  
+.contact-logo {
+  width: 50px;
 }
 
-.contact-platform-name{
-  font-size: 1em;  
+.contact-platform-name {
+  font-size: 1em;
   color: whitesmoke;
   margin: 10px;
   text-decoration: none;
   cursor: pointer;
 }
 
-.contact-platform-name:hover{
- color: #FE6B8B;
- text-decoration: none;
- 
+.contact-platform-name:hover {
+  color: #fe6b8b;
+  text-decoration: none;
 }
 
-.name, .date-created{
-  color: white; 
+.name,
+.date-created {
+  color: white;
   font-size: 1em;
   margin-top: 5px;
   margin-bottom: 5px;
   cursor: pointer;
-
 }
 
-.color-text{
+.color-text {
   color: whitesmoke;
-
 }
 
-.contact-me{
+.contact-me {
   /* font-family: indie flower; */
   color: whitesmoke;
   font-size: 1em;
   margin-top: 5px;
   margin-bottom: 5px;
   cursor: pointer;
-  
 }
 
-.contact-item{
+.contact-item {
   margin: 10px;
-
 }
 
-.contact-details{
+.contact-details {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(87,87,87);
+  background-color: rgb(87, 87, 87);
 }
 
-.author-details{
- margin-top: 10px; 
- display: flex;
- justify-content: center;
- align-items: center;
-
+.author-details {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* properties from other file: */
-ul{
+ul {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
   margin: 10px;
-  
 }
 
-.nav-link:hover{
- color: whitesmoke;
-
+.nav-link:hover {
+  color: whitesmoke;
 }
 
-li{
+li {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-.nav-item{
+.nav-item {
   margin-left: 10px;
   margin-right: 10px;
   width: auto;
-
 }
 
+@media all and (max-width: 800px) {
+  .contact-logo {
+    width: 30px;
+    margin: 0px;
+  }
 
-
-@media all and (max-width:800px){
- .contact-logo{
-   width: 30px;
-   margin: 0px;
- } 
- 
- .name, .date-created{
-    color: white; 
+  .name,
+  .date-created {
+    color: white;
     font-size: 15px;
- }
+  }
 
- .contact-me{
-  /* font-family: indie flower; */
-  color: whitesmoke;
-  font-size: 14px;
- } 
- 
- .contact-platform-name{
-    font-size: 15px;  
+  .contact-me {
+    /* font-family: indie flower; */
+    color: whitesmoke;
+    font-size: 14px;
+  }
+
+  .contact-platform-name {
+    font-size: 15px;
     color: whitesmoke;
     margin: 10px;
     text-decoration: none;
- }
+  }
 
- .contact-item{
-  margin: 0px;
- }
+  .contact-item {
+    margin: 0px;
+  }
 
- .contact-details{
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
+  .contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
- .contact-details > ul{
-  display: flex;
-  flex-direction: column;
+  .contact-details > ul {
+    display: flex;
+    flex-direction: column;
+  }
 
- }
- 
- .contact-details > ul >li{
-  padding: 5px;
-
- }
-
+  .contact-details > ul > li {
+    padding: 5px;
+  }
 }
-
-
-

@@ -1,7 +1,6 @@
 import React from 'react'
 import {Button} from 'react-bootstrap'
 import './fileUpload.css'
-import axios from 'axios'
 import firebase from '../../firebase.js'
 //import image for default profile picture:
 // import defaultPic from '../images/user-default-pic.png'
@@ -34,7 +33,7 @@ class FileUpload extends React.Component {
   let uploadTask = storageRef.put(file);
 
   uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED,() =>{
-   let downloadURL = uploadTask.snapshot.downloadURL 
+   //let downloadURL = uploadTask.snapshot.downloadURL 
   })
 
   console.log('name of the file:\n',file.name)

@@ -12,7 +12,11 @@ class DataProvider extends React.Component{
    this.state = {
     hobbiesList : hobbiesArray, 
     selectedHobbies: [],
-    userNumCompatibilities: 0
+    userNumCompatibilities: 0,
+    //user attributes(used for message box section):
+    userId: null,
+    userPicturePath: '',
+    userName: ''
 
    } 
   }
@@ -50,16 +54,21 @@ class DataProvider extends React.Component{
    const selectedItem = this.getItem(id);
    //update item status:
    selectedItem.selected = false;
-   //update the state:
    this.setState({selectedHobbies: temp})
    
   }
 
+  
+  handleUserMessage = (username,userid,imgsource) =>{
+   //then using passed data update the state:
+   this.setState({userName: username})
+   this.setState({userId: userid})
+   this.setState({userPicturePath: imgsource})
+
+  }
 
 
   render = () =>{
- 
-   console.log('hobbies array:\n',this.state.selectedHobbies)
 
    return(
     <DataContext.Provider
@@ -70,7 +79,12 @@ class DataProvider extends React.Component{
       addHobby: this.addHobby,
       selectedHobbies: this.state.selectedHobbies,
       updateStatus: this.updateStatus,
-      removeHobby: this.removeHobby
+      removeHobby: this.removeHobby,
+      handleUserMessage: this.handleUserMessage,
+      //send user details to message page:
+      userName: this.state.userName,
+      userId: this.state.userId,
+      userPicturePath: this.state.userPicturePath
       
      }}
     >
@@ -85,4 +99,4 @@ class DataProvider extends React.Component{
 const DataConsumer = DataContext.Consumer;
 
 //export them:
-export {DataProvider, DataConsumer};
+export {DataProvider, DataConsumer };

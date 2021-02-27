@@ -5,6 +5,8 @@ import Searchbar from '../Searchbar/Searchbar.js'
 // import match_list from '../fake users/users.js'
 import Home from '../../Home.js'
 import {Button} from 'react-bootstrap'
+import {DataConsumer} from '../context/context.js'
+import MessagePage from '../Message Page/MessagePage.js'
 
 
 class MatchesList extends React.Component{
@@ -20,6 +22,7 @@ class MatchesList extends React.Component{
     },
     searchField: ''
    }
+   this.renderMessagePage = this.renderMessagePage.bind(this)
   }
   
 
@@ -117,8 +120,15 @@ class MatchesList extends React.Component{
   }
 
 
-  render = () =>{
+  //a method that allow us to render/access message page:
+  renderMessagePage = () =>{
+   this.setState({currentPath: 'message-page'})
 
+  }
+  
+
+
+  render = () =>{
    // filter here the array by users names:
    const filteredByName = this.state.matchList.filter(user =>{
     return user.username.toLowerCase().includes(this.state.searchField.toLowerCase()) 
@@ -131,12 +141,13 @@ class MatchesList extends React.Component{
             username = {item.username}
             email = {item.email}
             city = {item.city}
-            imageprofile = {item.imageprofile} 
+            imageprofile = {item.imageprofile}
+            renderMessagePage = {this.renderMessagePage} 
            /> 
    })
  
    return(
-    <div>
+    <div> 
       {
        this.state.currentPath === "matches-list" ? 
        (<div className='match-list-main-container'>
@@ -163,8 +174,7 @@ class MatchesList extends React.Component{
             compatibilities
            </p> 
           </div>
-          
-          
+                    
           <div className='matches-list-section center-elem'>
             {/* matches lsit properly: */}
             <div className='matches-list'>
@@ -173,8 +183,6 @@ class MatchesList extends React.Component{
             }
             </div> 
           </div>
-        {/* Add a button here later on */}
-
 
         <div className='center-elem'>
           <Button
@@ -186,12 +194,29 @@ class MatchesList extends React.Component{
         </div>
 
         </div>
-       </div>) : (<Home/>)
+       </div>) : 
+       this.state.currentPath === 'message-page' ?
+       <div className='center-elem'>
+        <DataConsumer>
+         {
+          (value) =>{
+           return <MessagePage 
+                   userId={this.props.userId}
+                   changeRoute = {this.props.changeRoute}
+                   selectedUserId = {value.userId}
+                  />  
+          }
+         }
+        </DataConsumer> 
+       </div>
+        : //otherwise return home page
+       (<Home/>)
 
       } 
     </div>   
    )   
   }
+
 }
 
 export default MatchesList;

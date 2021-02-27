@@ -1,270 +1,240 @@
-
 /* import font from google fonts platform: */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 
 .App {
   text-align: center;
   margin: 0;
   padding: 0;
-
 }
-
 
 /* global text style: */
-.global-font{
- font-weight: 200;
- font-size: 0.8em;
- color: #242424; 
- 
-}
-
-.title-page{
+.global-font {
   font-weight: 200;
-  font-size: 1.4em;
-
+  font-size: 0.8em;
+  color: #242424;
 }
 
-.title-page-username{
- color: #FE6B8B;
- margin-left: 10px;
- font-family: dancing script;
- font-size: 2em;
+.title-page {
+  font-weight: 200;
+  font-size: 1.4rem;
+}
 
+.title-page-username {
+  color: #fe6b8b;
+  margin-left: 10px;
+  font-family: "Baloo 2";
+  font-size: 2rem;
 }
 
 /* logo properties: */
-.page-logo{
- width: 60px;
- margin: 0px;
+.page-logo {
+  width: 60px;
+  margin: 0px;
 }
 
-.logo-container{
+.logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* apply the same property for both classes: */
-.logo, .title{
+.logo,
+.title {
   margin: 5px;
 }
 
-.title-text{
-  font-size: 1em;
+.title-text {
+  font-size: 1rem;
   font-family: montserrat;
   margin: 10px;
   cursor: pointer;
 }
 
-.first-half{
-  color: #FE6B8B;
+.first-half {
+  color: #fe6b8b;
 }
 
-.second-half{
-  color: #FF8E53;
+.second-half {
+  color: #ff8e53;
 }
 
-.first-half, .second-half{
+.first-half,
+.second-half {
   font-weight: 200;
   font-size: 2em;
 }
 
-
-
-
 /* image description propery: */
-.game-image{
+.game-image {
   width: 70vw;
   margin: 55px;
-  box-shadow: 7px 7px 10px rgb(87,87,87);
+  box-shadow: 7px 7px 10px rgb(87, 87, 87);
 }
 
-.picture{
+.picture {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.page-desc-text{
+.page-desc-text {
   font-size: 1.5em;
   font-weight: 200;
   font-family: comfortaa;
   background-color: rgb(255, 208, 0);
   padding: 35px;
   width: 100%;
-
 }
 
-.hobby-img{
+.hobby-img {
   width: 100px;
   margin: 10px;
-
 }
 
-.page-desc{
- margin: 25px;
-
+.page-desc {
+  margin: 25px;
 }
 
-.descimg, .desctext{
+.desc-container {
+  /* width: 60%; */
+}
+
+.descimg,
+.desctext {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.descimg{
- margin: 5px; 
+.descimg {
+  margin: 5px;
 }
 
 /* description text section property: */
-.description-text{
- font-weight: 200;
- font-size: 1.2em; 
- background: -webkit-linear-gradient(45deg,#FE6B8B, #FF8E53);
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
-
- /* font imported from google fonts: */
- font-family: comfortaa;
-}
-
-.page-description{
- width: 720px;
- margin: 10px;
- background-color: rgb(54, 54, 54);
-
-}
-
-
-.title-page-container{
-  margin: 20px;
-}
-
-.slide-img-prop{
- width: 45vw;
- height: auto;
-
-}
-
-.carousel-container{
- margin: 35px;
-
-}
-
-.image-and-text{
- display: flex;
- justify-content: space-around;
- opacity: 0.95;
- background-color: rgb(54, 54, 54);
- padding: 20px;
-
-}
-
-
-/* responsive screeen section: */
-@media all and (max-width:800px){
- .game-image{
-  width: 90vw;
-
- }
- 
- .image-and-text{
-  display: flex;
-  /* set children elements as a row */
-  flex-direction: column;
-  padding: 10px;
-  
- }
-
- .page-desc{
-
-  display: flex;
-  flex-direction: column;
-
- }
-
- .description-text{
+.description-text {
   font-weight: 200;
-  font-size: 15px; 
-  
-  background: -webkit-linear-gradient(45deg,#FE6B8B, #FF8E53);
+  font-size: 1.2em;
+  background: -webkit-linear-gradient(45deg, #fe6b8b, #ff8e53);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
- }
- 
- .add-nav-btn ,.matches-nav-btn{
-  background-color: #FE6B8B; 
- }
-
- .account-nav-btn{
-  background-color: #FF8E53; 
- }
-
- .page-description{
-  margin: 40px;
-  width: auto;
-  
- }
-
- .page-desc-text{
-  font-size: 22px;
+  /* font imported from google fonts: */
   font-family: comfortaa;
-   
- }
+}
 
- .hobby-img{
-  width: 55px;
- }
+.page-description {
+  width: 720px;
+  margin: 10px;
+  background-color: rgb(54, 54, 54);
+}
 
- .title-page{
-  font-weight: 200;
-  font-size: 18px;
- }
+.title-page-container {
+  margin: 20px;
+}
 
- .first-half, .second-half{
-  font-size: 20px;
-  font-family: montserrat;  
- }
-
- .page-logo{
-  width: 40px;
-  margin: 0px;
- }
-
- .slide-img-prop{
-  width: 85vw;
+.slide-img-prop {
+  width: 45vw;
   height: auto;
- 
- }
-
- /*end media query*/
 }
 
-
-
-@media all and (max-width:1200px){
-
+.carousel-container {
+  margin: 35px;
 }
 
+.image-and-text {
+  display: flex;
+  justify-content: space-around;
+  opacity: 0.95;
+  background-color: rgb(54, 54, 54);
+  padding: 20px;
+}
 
+/* responsive screeen section: */
+@media all and (max-width: 800px) {
+  .game-image {
+    width: 90vw;
+  }
 
+  .image-and-text {
+    display: flex;
+    /* set children elements as a row */
+    flex-direction: column;
+    padding: 10px;
+  }
 
+  .page-desc {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .description-text {
+    font-weight: 200;
+    font-size: 15px;
 
+    background: -webkit-linear-gradient(45deg, #fe6b8b, #ff8e53);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .add-nav-btn,
+  .matches-nav-btn {
+    background-color: #fe6b8b;
+  }
+
+  .account-nav-btn {
+    background-color: #ff8e53;
+  }
+
+  .page-description {
+    margin: 40px;
+    width: auto;
+  }
+
+  .page-desc-text {
+    font-size: 22px;
+    font-family: comfortaa;
+  }
+
+  .hobby-img {
+    width: 55px;
+  }
+
+  .title-page {
+    font-weight: 200;
+    font-size: 18px;
+  }
+
+  .first-half,
+  .second-half {
+    font-size: 20px;
+    font-family: montserrat;
+  }
+
+  .page-logo {
+    width: 40px;
+    margin: 0px;
+  }
+
+  .slide-img-prop {
+    width: 85vw;
+    height: auto;
+  }
+
+  /*end media query*/
+}
+
+@media all and (max-width: 1200px) {
+}
 
 /* App defaults settings: */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 
 .App-header {
   background-color: #282c34;

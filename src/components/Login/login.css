@@ -1,118 +1,104 @@
-
 /* logo properties: */
-.user-logo{
+.user-logo {
   width: 60px;
   height: auto;
   margin: 6px;
 }
 
-.top-container{
+.top-container {
   display: inline-flex;
   justify-content: center;
   margin: 10px;
-
 }
 
-.title-container{
+.title-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 15px;
-
 }
 
-.page-title{
- font-weight: 200;
- font-size: 2.1em;  
-
+.page-title {
+  font-weight: 200;
+  font-size: 2.1em;
 }
 
-.first-half-title{
- color: #FF8E53;
+.first-half-title {
+  color: #ff8e53;
 }
 
-.second-half-title{
- color: #FE6B8B;
+.second-half-title {
+  color: #fe6b8b;
 }
 
-.credentials-section-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;  
-}
-
-.follow-message-section{
+.credentials-section-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
 }
 
-.follow-message{
+.follow-message-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.follow-message {
   font-size: 1.3em;
   font-weight: 200;
   text-align: center;
   /* colorized font style: */
-  background: -webkit-linear-gradient(45deg,#FE6B8B, #FF8E53);
+  background: -webkit-linear-gradient(45deg, #fe6b8b, #ff8e53);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    
+
   font-family: comfortaa;
 }
 
-.btn-style{
-  background-image: linear-gradient(to right,#FF8E53,#FE6B8B);
+.btn-style {
+  background-image: linear-gradient(to right, #ff8e53, #fe6b8b);
   border: 0px;
   width: 120px;
   height: auto;
-
 }
 
-.btn-container{
+.btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.no-account-message > p{
- margin: 0px;
- font-size: 1.1em;
- color: rgb(87, 87, 87);
- font-family: comfortaa;
- text-align: center;
-
+.no-account-message > p {
+  margin: 0px;
+  font-size: 1.1em;
+  color: rgb(87, 87, 87);
+  font-family: comfortaa;
+  text-align: center;
 }
 
-.no-account-message, .register-btn{
+.no-account-message,
+.register-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 15px;
-
 }
 
-.register-nav{
- margin-top: 60px;
- margin-bottom: 60px;
- border: 0px;
- padding: 10px;
-
+.register-nav {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border: 0px;
+  padding: 10px;
 }
 
-.register-nav-section{
+.register-nav-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-
 }
 
-.other-msg{
+.other-msg {
   height: 25vh;
-
 }
-
-
-

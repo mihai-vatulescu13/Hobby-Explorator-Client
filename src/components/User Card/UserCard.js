@@ -3,6 +3,9 @@ import './userCard.css'
 import firebase from '../../firebase.js'
 //use later on as default picture if the user was not choose a profile picture
 import userPicture from '../images/user-picture1.png'
+import {DataConsumer} from '../context/context.js'
+import {Button} from 'react-bootstrap'
+
 
 class UserCard extends React.Component{
  constructor(props){
@@ -14,10 +17,8 @@ class UserCard extends React.Component{
  } 
 
 
-
  componentDidMount(){
   let storageRef = firebase.storage().ref()
-  let spaceRef = storageRef.child('images/'+this.props.imageprofile)
   storageRef
    .child('images/'+this.props.imageprofile)
    .getDownloadURL()
@@ -55,7 +56,7 @@ class UserCard extends React.Component{
 
 
  render(){
-  const {username,hobby1,hobby2,hobby3,city,email,userid} = this.props;  
+  const {username,city,email,userid} = this.props;  
   
   return(
    <div className='user-card-container'>
@@ -91,20 +92,37 @@ class UserCard extends React.Component{
             })
           }
          </ul> 
-        </div>
-        {/* <p className='user-hobby-text'>
-         {userid}
-        </p> */}
-        <p className='user-hobby-text'>
-         {hobby3}
-        </p>
+        </div> 
       </div>
+
       <div className='city-container center-elem'>
        <h5>
         City: <span className='city-text'>{city}</span>
-       </h5>
+       </h5> 
       </div>
      </div>
+
+     {/*Message button section:*/}
+     <DataConsumer>
+      {
+        (value) =>{
+        
+         return(
+          //Pass to this button component user name, picture and id as props:  
+          <Button
+           className='btn-style'
+           onClick={() =>{
+            // value.renderMessagePage('message-page');
+             value.handleUserMessage(username,userid,this.state.imageSource);
+             this.props.renderMessagePage()
+           }}
+          >
+           Message
+          </Button> 
+         ) 
+        } 
+      } 
+     </DataConsumer>
 
     </div>
 
