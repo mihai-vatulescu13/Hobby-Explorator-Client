@@ -36,7 +36,8 @@
   padding: 20px;
   margin: 12px;
   border-radius: 6px;
-  background-color: rgb(246, 246, 246);
+  /* background-color: rgb(246, 246, 246); */
+  background-color: rgb(87, 87, 87);
 }
 
 .user-profile-image {
@@ -75,9 +76,11 @@
   margin-left: 70px;
 }
 
-.usr-data-text {
-  font-size: 18px;
-  color: rgb(87, 87, 87);
+.usr-data-text,
+.changes-msg,
+.setting-label {
+  font-size: 1.1rem;
+  color: rgb(246, 246, 246);
 }
 
 .user-data-label,
@@ -89,7 +92,7 @@
 .user-data-card-title {
   padding: 5px;
   font-family: comfortaa;
-  color: rgb(87, 87, 87);
+  color: rgb(246, 246, 246);
   text-shadow: black;
   font-size: 1.5em;
 }
@@ -102,7 +105,7 @@
 }
 
 .user-hobbies-label {
-  color: rgb(87, 87, 87);
+  color: rgb(246, 246, 246);
   /* color: #FE6B8B; */
   font-family: comfortaa;
   font-size: 1.2rem;
@@ -120,7 +123,7 @@
 }
 
 .delete-account-label {
-  color: rgb(228, 4, 4);
+  color: rgb(221, 78, 78);
   font-size: 1.3rem;
   margin-bottom: 1px;
   margin-top: 18px;
@@ -128,13 +131,13 @@
 }
 
 .warning-message {
-  color: rgb(228, 4, 4);
-  font-size: 1rem;
+  color: rgb(221, 78, 78);
+  font-size: 1.2rem;
   margin: 4px;
 }
 
 .delete-account-btn {
-  background-color: rgb(228, 4, 4);
+  background-color: rgb(221, 78, 78);
   margin: 10px;
 }
 
@@ -149,6 +152,11 @@
 
 .change-name-field {
   width: 320px;
+}
+
+.usr-data-section > ul {
+  display: flex;
+  align-items: flex-start;
 }
 
 @media all and (max-width: 800px) {
