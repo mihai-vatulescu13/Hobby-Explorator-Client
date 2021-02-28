@@ -3,14 +3,14 @@ import firebase from 'firebase'
 
 //config object:
 let config ={
- apiKey: "AIzaSyDTg94JGEQKCJURJd84PiAoT6XvElXS5LI",
- authDomain: "hobbyexploratorphotos.firebaseapp.com",
- databaseURL: "https://hobbyexploratorphotos.firebaseio.com",
- projectId: "hobbyexploratorphotos",
- storageBucket: "hobbyexploratorphotos.appspot.com",
- messagingSenderId: "1069276141665",
- appId: "1:1069276141665:web:249a2ec9b4bea1ea2a3220",
- measurementId: "G-WMXZ8FQN1J"
+ apiKey: process.env.REACT_APP_API_KEY,
+ authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+ databaseURL: process.env.REACT_APP_DATABASE_URL,
+ projectId: process.env.REACT_APP_PROJECT_ID,
+ storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+ messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+ appId: process.env.REACT_APP_APP_ID,
+ measurementId: process.env.REACT_APP_MEASUREMENT_ID
 
 }
 
