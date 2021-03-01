@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer.js'
 import {DataConsumer} from '../context/context.js'
 import FileUpload from '../file upload/FileUpload.js'
 import Login from '../Login/Login.js'
+import { isWidthUp } from '@material-ui/core'
 
 
 class Register extends React.Component{
@@ -17,10 +18,39 @@ class Register extends React.Component{
     email: '',
     password: '',
     city: '',
-    isPasswordComplex: false
+    isPasswordComplex: false,
+    usersEmailsAddresses: [],
+    isUniqueEmail: true //first let's suppose that user inserted email is unique
    }   
   } 
  
+
+ componentDidMount(){
+  this.handleUsersEmails() 
+ }
+
+ //method that handle all users emails:
+ handleUsersEmails = () =>{
+  fetch('https://fierce-shore-66137.herokuapp.com/getUsers')
+   .then(res => res.json())
+   .then(data => {
+     let usersEmails = data.map(item =>{
+      return item.email; 
+     })
+     //update the state with all users email addresses:
+     this.setState({usersEmailsAddresses: usersEmails})
+   })
+ } 
+
+
+ checkUniqueEmail = (email) =>{
+  if(this.state.usersEmailsAddresses.includes(email)){
+   this.setState({isUniqueEmail: false})
+  }else{
+   this.setState({isUniqueEmail: true})
+  }
+ }
+
  //this method handle the path change: 
  onChangeReg = (path) =>{
   this.setState({regPath: path});
@@ -31,8 +61,11 @@ class Register extends React.Component{
   this.setState({userName: event.target.value});
  }
 
+ //this method handle the user full name:
  handleEmail = (event) =>{
   this.setState({email: event.target.value});
+  //call the method that check if the given email already exist:
+  this.checkUniqueEmail(event.target.value)
  }
 
  handlePassword = (event) =>{
@@ -119,6 +152,19 @@ class Register extends React.Component{
                   <Form.Text className="text-muted">
                    We'll never share your email with anyone else.
                   </Form.Text>
+                   {
+                    //render a realtime message to the user in case that his inserted email already exist: 
+                    !this.state.isUniqueEmail ? 
+                     (<p style={
+                      {
+                       color: '#FE6B8B',
+                       fontSize: '1rem',
+                       textAlign: 'center',
+                      }
+                     }>
+                      This email was already taken!
+                     </p>) : <div></div> 
+                  }
                  </Form.Group>
                  
                  {/*password field */}
