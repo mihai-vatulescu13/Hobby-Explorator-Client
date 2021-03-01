@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Hobby-Explorator-Client/static/css/main.bbb304b9.chunk.css",
-    "main.js": "/Hobby-Explorator-Client/static/js/main.ac58daa6.chunk.js",
-    "main.js.map": "/Hobby-Explorator-Client/static/js/main.ac58daa6.chunk.js.map",
+    "main.js": "/Hobby-Explorator-Client/static/js/main.83230298.chunk.js",
+    "main.js.map": "/Hobby-Explorator-Client/static/js/main.83230298.chunk.js.map",
     "runtime-main.js": "/Hobby-Explorator-Client/static/js/runtime-main.924b83c6.js",
     "runtime-main.js.map": "/Hobby-Explorator-Client/static/js/runtime-main.924b83c6.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/Hobby-Explorator-Client/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.26e181a4.chunk.js": "/Hobby-Explorator-Client/static/js/2.26e181a4.chunk.js",
-    "static/js/2.26e181a4.chunk.js.map": "/Hobby-Explorator-Client/static/js/2.26e181a4.chunk.js.map",
+    "static/js/2.bc9f14d6.chunk.js": "/Hobby-Explorator-Client/static/js/2.bc9f14d6.chunk.js",
+    "static/js/2.bc9f14d6.chunk.js.map": "/Hobby-Explorator-Client/static/js/2.bc9f14d6.chunk.js.map",
     "index.html": "/Hobby-Explorator-Client/index.html",
-    "precache-manifest.d818e0a77e5c15423952c30c7d508331.js": "/Hobby-Explorator-Client/precache-manifest.d818e0a77e5c15423952c30c7d508331.js",
+    "precache-manifest.a9854b549fac2bdc6c19097617add6b6.js": "/Hobby-Explorator-Client/precache-manifest.a9854b549fac2bdc6c19097617add6b6.js",
     "service-worker.js": "/Hobby-Explorator-Client/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/Hobby-Explorator-Client/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.bbb304b9.chunk.css.map": "/Hobby-Explorator-Client/static/css/main.bbb304b9.chunk.css.map",
-    "static/js/2.26e181a4.chunk.js.LICENSE.txt": "/Hobby-Explorator-Client/static/js/2.26e181a4.chunk.js.LICENSE.txt",
+    "static/js/2.bc9f14d6.chunk.js.LICENSE.txt": "/Hobby-Explorator-Client/static/js/2.bc9f14d6.chunk.js.LICENSE.txt",
     "static/media/bike.png": "/Hobby-Explorator-Client/static/media/bike.df01264d.png",
     "static/media/books.png": "/Hobby-Explorator-Client/static/media/books.841c4006.png",
     "static/media/chess.png": "/Hobby-Explorator-Client/static/media/chess.53e8e57a.png",
@@ -47,8 +47,8 @@
   "entrypoints": [
     "static/js/runtime-main.924b83c6.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.26e181a4.chunk.js",
+    "static/js/2.bc9f14d6.chunk.js",
     "static/css/main.bbb304b9.chunk.css",
-    "static/js/main.ac58daa6.chunk.js"
+    "static/js/main.83230298.chunk.js"
   ]
 }
