@@ -6,7 +6,6 @@ import Footer from '../Footer/Footer.js'
 import {DataConsumer} from '../context/context.js'
 import FileUpload from '../file upload/FileUpload.js'
 import Login from '../Login/Login.js'
-import { isWidthUp } from '@material-ui/core'
 
 
 class Register extends React.Component{
@@ -34,7 +33,7 @@ class Register extends React.Component{
   fetch('https://fierce-shore-66137.herokuapp.com/getUsers')
    .then(res => res.json())
    .then(data => {
-     let usersEmails = data.map(item =>{
+     const usersEmails = data.map(item =>{
       return item.email; 
      })
      //update the state with all users email addresses:

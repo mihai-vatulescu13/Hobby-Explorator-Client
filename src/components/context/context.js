@@ -1,6 +1,6 @@
 import React from 'react'
 import hobbiesArray from '../Hobbies Array/hobbies.js'
-//create an data flow between components using React Context-Provider-Consumer:
+//create a data flow between components using React Context-Provider-Consumer:
 //Context contain Provider(source) and Consumer(the final destination)
 const DataContext = React.createContext(); 
 
@@ -43,7 +43,7 @@ class DataProvider extends React.Component{
   }
   
    
-  //implement remove item function using .splice() method:
+  //implement remove item function using .filter() method:
   removeHobby = (id) =>{
    let temp = this.state.selectedHobbies;
 

@@ -53,7 +53,7 @@ class FileUpload extends React.Component {
  uploadUserData = () =>{
   const {userName, email, password, city} = this.props.userData; 
   fetch('https://fierce-shore-66137.herokuapp.com/register',{
-   method: 'post',
+   method: 'POST',
    headers: {'Content-type':'application/json'},
    body: JSON.stringify({
     userName: userName,
@@ -76,7 +76,7 @@ class FileUpload extends React.Component {
     <div className='file-upload-container center-elem'>
      <div className='input-and-label center-elem'>
       <p className='picture-profile-label'>
-       Please choose your profile picture
+       Choose profile picture(required to create account)
       </p> 
       <input 
        type='file' 
@@ -90,27 +90,7 @@ class FileUpload extends React.Component {
     </div>
 
 
-    {/* status image message */}
-    {
-      this.state.uploadedFileName ?
-      //render image or message for success: 
-      (
-       <div>
-        <p style={{textAlign:'center'}}>
-         Image preview:
-        </p>
-        <div className='center-elem'>
-         <img
-          className='img-preview'
-          //image properly 
-          src={this.state.uploadedFilePath} 
-          alt={this.state.uploadedFileName}
-         />
-        </div>   
-       </div>  
-      ) : 
-      (<div></div>)
-    }
+    
  
 
    <div className='btn-container'>
