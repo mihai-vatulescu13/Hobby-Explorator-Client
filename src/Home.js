@@ -56,7 +56,7 @@ class App extends React.Component {
              Hobby
              </span>
              <span className='second-half'>
-              Explorator
+              Explorer
              </span>
             </p> 
            </div>
