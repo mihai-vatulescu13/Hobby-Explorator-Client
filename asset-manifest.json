@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Hobby-Explorator-Client/static/css/main.46e33161.chunk.css",
-    "main.js": "/Hobby-Explorator-Client/static/js/main.a348f6d2.chunk.js",
-    "main.js.map": "/Hobby-Explorator-Client/static/js/main.a348f6d2.chunk.js.map",
+    "main.js": "/Hobby-Explorator-Client/static/js/main.9a170c8c.chunk.js",
+    "main.js.map": "/Hobby-Explorator-Client/static/js/main.9a170c8c.chunk.js.map",
     "runtime-main.js": "/Hobby-Explorator-Client/static/js/runtime-main.924b83c6.js",
     "runtime-main.js.map": "/Hobby-Explorator-Client/static/js/runtime-main.924b83c6.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/Hobby-Explorator-Client/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.8618a2af.chunk.js": "/Hobby-Explorator-Client/static/js/2.8618a2af.chunk.js",
     "static/js/2.8618a2af.chunk.js.map": "/Hobby-Explorator-Client/static/js/2.8618a2af.chunk.js.map",
     "index.html": "/Hobby-Explorator-Client/index.html",
-    "precache-manifest.93e460cf917f6d28155e744d02c22725.js": "/Hobby-Explorator-Client/precache-manifest.93e460cf917f6d28155e744d02c22725.js",
+    "precache-manifest.2bcdb70017fee966b8f31f06a7251e3f.js": "/Hobby-Explorator-Client/precache-manifest.2bcdb70017fee966b8f31f06a7251e3f.js",
     "service-worker.js": "/Hobby-Explorator-Client/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/Hobby-Explorator-Client/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.46e33161.chunk.css.map": "/Hobby-Explorator-Client/static/css/main.46e33161.chunk.css.map",
@@ -49,6 +49,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.8618a2af.chunk.js",
     "static/css/main.46e33161.chunk.css",
-    "static/js/main.a348f6d2.chunk.js"
+    "static/js/main.9a170c8c.chunk.js"
   ]
 }
